@@ -1,26 +1,23 @@
 STARTFONT 2.1
-COMMENT Copyright 2023 Eugene Dragoev. All rights reserved.
-COMMENT
-COMMENT Redistribution and use in source and binary forms, with or without
-COMMENT modification, are permitted provided that the following conditions
-COMMENT are met:
-COMMENT 1. Redistributions of source code must retain the above copyright
-COMMENT    notice, this list of conditions and the following disclaimer.
-COMMENT 2. Redistributions in binary form must reproduce the above copyright
-COMMENT    notice, this list of conditions and the following disclaimer in the
-COMMENT    documentation and/or other materials provided with the distribution.
-COMMENT
-COMMENT THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED
-COMMENT WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-COMMENT MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-COMMENT IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
-COMMENT INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
-COMMENT BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-COMMENT LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-COMMENT CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-COMMENT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
-COMMENT ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-COMMENT POSSIBILITY OF SUCH DAMAGE.
+COMMENT Copyright 2023 Eugene Dragoev
+COMMENT 
+COMMENT Permission is hereby granted, free of charge, to any person obtaining a copy
+COMMENT of this software and associated documentation files (the "Software"), to deal
+COMMENT in the Software without restriction, including without limitation the rights
+COMMENT to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+COMMENT copies of the Software, and to permit persons to whom the Software is
+COMMENT furnished to do so, subject to the following conditions:
+COMMENT 
+COMMENT The above copyright notice and this permission notice shall be included in all
+COMMENT copies or substantial portions of the Software.
+COMMENT 
+COMMENT THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+COMMENT IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+COMMENT FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+COMMENT AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+COMMENT LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+COMMENT OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+COMMENT SOFTWARE.
 FONT -windows-12x20-medium-r-normal--20-200-72-72-c-120-oemsys
 SIZE 20 96 96
 FONTBOUNDINGBOX 12 20 0 -3
