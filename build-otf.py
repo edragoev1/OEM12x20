@@ -3,6 +3,11 @@
 
     python3 build-otf.py            writes OEM12x20.otf, with CFF outlines
 
+and then, from the pdfjet repository, the OEM12x20.otf.stream that PDFjet
+embeds faster and smaller:
+
+    util/generate-stream-fonts-files.sh ../OEM12x20
+
 The pixels of a glyph are merged into outlines, so that no two contours
 overlap or touch along an edge, and the glyphs are mapped from code page 437
 to Unicode, so that the text of a PDF can be extracted and read aloud.
