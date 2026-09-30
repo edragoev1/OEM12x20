@@ -18,6 +18,15 @@ from fontTools.fontBuilder import FontBuilder
 from fontTools.pens.t2CharStringPen import T2CharStringPen
 
 UNIT = 50          # font units per pixel; 20 pixels = 1000 units, the em
+# How far an outline that reaches the edge of its cell goes past it, a tenth
+# of a pixel: the blocks and lines of two cells side by side, or one above
+# the other, then overlap instead of touching, and no seam shows where a
+# viewer's anti-aliasing would leave one
+OVERSHOOT = 5
+# The characters drawn to join their neighbours: the shades, the lines of
+# box drawing and the blocks (0xB0 to 0xDF), and the two halves of the
+# integral sign; letters are left as they are
+JOINING = set(range(0xB0, 0xE0)) | {0xF4, 0xF5}
 FAMILY = "OEM12x20"
 VERSION = "1.000"
 COPYRIGHT = "Copyright (c) 2026 PDFjet Software"
@@ -123,6 +132,14 @@ def contours(bbx, pixels):
     return result
 
 
+def overshoot(outlines, left, right, bottom, top):
+    """Moves the points on the edges of the cell OVERSHOOT units out."""
+    def out(v, low, high):
+        return v - OVERSHOOT if v == low else v + OVERSHOOT if v == high else v
+    return [[(out(x, left, right), out(y, bottom, top)) for x, y in corners]
+            for corners in outlines]
+
+
 def draw(pen, outlines):
     # CFF outer contours run counterclockwise
     for corners in outlines:
@@ -148,6 +165,9 @@ def build():
         names.append(name)
         cmap[u] = name
         outlines[name] = contours(*glyphs[code])
+        if code in JOINING:
+            outlines[name] = overshoot(outlines[name],
+                                       0, advance, -descent, ascent)
 
     fb = FontBuilder(1000, isTTF=False)
     fb.setupGlyphOrder(names)
