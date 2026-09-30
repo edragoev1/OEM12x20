@@ -434,7 +434,7 @@ func main() {
 	progress.drawOn(page, font, size, x, y-14)
 
 	caption := pdfjet.NewTextLine(font,
-		"MIT License · Copyright (c) 2023 PDFjet Software · github.com/edragoev1/OEM12x20")
+		"MIT License · Copyright (c) 2023-2026 PDFjet Software · github.com/edragoev1/OEM12x20")
 	caption.SetTextColor(ink)
 	caption.SetFontSize(8)
 	caption.SetLocation((pageWidth-caption.GetWidth())/2, page.GetHeight()-36)
