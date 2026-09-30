@@ -1,7 +1,7 @@
 STARTFONT 2.1
 COMMENT MIT License
 COMMENT 
-COMMENT Copyright (c) 2023-2026 PDFjet Software
+COMMENT Copyright (c) 2026 PDFjet Software
 COMMENT 
 COMMENT Permission is hereby granted, free of charge, to any person obtaining a copy
 COMMENT of this software and associated documentation files (the "Software"), to deal
@@ -42,7 +42,7 @@ FONT_ASCENT 17
 FONT_DESCENT 3
 CAP_HEIGHT 14
 DEFAULT_CHAR 32
-COPYRIGHT "Copyright (c) 2023-2026 PDFjet Software"
+COPYRIGHT "Copyright (c) 2026 PDFjet Software"
 NOTICE "MIT License"
 ENDPROPERTIES
 CHARS 256

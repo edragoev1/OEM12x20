@@ -20,7 +20,7 @@ from fontTools.pens.t2CharStringPen import T2CharStringPen
 UNIT = 50          # font units per pixel; 20 pixels = 1000 units, the em
 FAMILY = "OEM12x20"
 VERSION = "1.000"
-COPYRIGHT = "Copyright (c) 2023-2026 PDFjet Software"
+COPYRIGHT = "Copyright (c) 2026 PDFjet Software"
 LICENSE = "MIT License"
 
 # The graphic characters that code page 437 shows for the bytes 0x01 to 0x1F
