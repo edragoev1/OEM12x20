@@ -70,7 +70,7 @@ def read_bdf(path):
                             break
                         rows.append(int(line, 16))
                     break
-            width, height = bbx[0], bbx[1]
+            width = bbx[0]
             bits = (len(f"{rows[0]:x}") if rows else 0) * 4
             bits = max(bits, (width + 7) // 8 * 8)
             glyphs[code] = (bbx, [[(row >> (bits - 1 - x)) & 1
@@ -81,7 +81,7 @@ def read_bdf(path):
 def contours(bbx, pixels):
     """Traces the outlines of the lit pixels, in font units, clockwise for
     the outer contours, with the collinear points removed."""
-    width, height, x0, y0 = bbx
+    _, height, x0, y0 = bbx
     # The directed edges of every lit pixel, clockwise with y up; an edge
     # shared by two lit pixels appears in both directions and cancels out
     edges = set()
